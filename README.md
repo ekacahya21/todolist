@@ -5,6 +5,7 @@ A simple and clean todo list application built with vanilla JavaScript, HTML, an
 ## Features
 
 - Add new tasks
+- Mark tasks as completed
 - Delete tasks
 - Tasks persist in local storage
 - Clean and responsive design
