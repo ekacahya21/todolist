@@ -14,18 +14,23 @@ function addTask() {
 
 function createTaskElement(taskText, completed = false) {
   let li = document.createElement("li");
+  li.className = `flex justify-between items-center bg-gray-200 px-4 py-2 rounded-lg cursor-pointer transition ${
+    completed ? "line-through text-gray-500" : "hover:bg-gray-300"
+  }`;
   li.textContent = taskText;
-  if (completed) li.classList.add("completed");
 
   li.addEventListener("click", function () {
-    li.classList.toggle("completed");
+    li.classList.toggle("line-through");
+    li.classList.toggle("text-gray-500");
     updateTaskStatus(taskText);
   });
 
   let deleteBtn = document.createElement("button");
   deleteBtn.textContent = "X";
-  deleteBtn.style.marginLeft = "10px";
-  deleteBtn.addEventListener("click", function () {
+  deleteBtn.className =
+    "ml-2 bg-red-500 text-white px-2 py-1 rounded-lg hover:bg-red-600 transition";
+  deleteBtn.addEventListener("click", function (event) {
+    event.stopPropagation();
     li.remove();
     removeTask(taskText);
   });
