@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", loadTasks);
+document.getElementById("addTaskBtn").addEventListener("click", addTask);
 
 function addTask() {
   let taskInput = document.getElementById("taskInput");
