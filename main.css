@@ -3,6 +3,7 @@ body {
     text-align: center;
     margin: 50px;
 }
+
 .container {
     max-width: 400px;
     margin: auto;
@@ -11,10 +12,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 ul {
     list-style: none;
     padding: 0;
 }
+
 li {
     background: white;
     margin: 5px 0;
@@ -24,10 +27,12 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
 .completed {
     text-decoration: line-through;
     color: gray;
 }
+
 button {
     background: red;
     color: white;
