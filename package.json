@@ -4,7 +4,9 @@
   "description": "A simple and clean todo list application built with vanilla JavaScript, HTML, and CSS.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:init": "./node_modules/.bin/tailwindcss init"
+    "tailwind:init": "./node_modules/.bin/tailwindcss init",
+    "start:be": "node ./api/server.js",
+    "start:fe": "parcel ./src/index.html"
   },
   "repository": {
     "type": "git",
